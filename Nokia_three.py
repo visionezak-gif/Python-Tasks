@@ -35,6 +35,29 @@ def display_main_menu():
 			call_register()
 		case "5":
 			tones()
+		case "6":
+			settings()
+		case "7":
+			call_divert()
+		case "8":
+			music()
+		case "9":
+			games()
+		case "10":
+			calculator()
+		case "11":
+			reminders()
+		case "12":
+			clock()
+		case "13":
+			profiles()
+		case "14":
+			service()
+		case "15":
+			SIM_service()
+		case "0":
+			main_menu()
+			
 
 
 def phone_book_menu():
@@ -206,13 +229,15 @@ def message_menu():
 		case _:
 			print ("Invalid selection")
 						
-
-
 	display_main_menu()
 
+	
+	
 			
 def chat():
 	print("Chat")
+	
+	display_main_menu()
 	
 def call_register():
 	print("callregister")
@@ -319,6 +344,9 @@ def call_register():
 		case _:
 			print ("Invalid selection")
 			
+	display_main_menu()
+			
+			
 def tones():
 	print("tones")
 	tones = """
@@ -354,13 +382,242 @@ def tones():
 		case "8":
 			print("Screen saver")
 		case _:
-			print ("Invalid selection")	  	
+			print ("Invalid selection")	
+			
+	display_main_menu()
+			  	
 
+def settings():
+	print("settings")
+	
+	settings = """
+			
+	1. Call settings
+	2. Phone settings
+	3. Security settings
+	4. Restor factory settings			
+	"""		
+			
+	print(settings)
+
+	settings = input("Select option: ")
+
+	match settings:
+		case "1":
+			print("Call settings")
+			call_settings = """
+			
+	1. Automatic redial
+	2. Speed dailling
+	3. Call waiting options
+	4. Own number sending
+	5. Phone line in use
+	6. Automatic answer				
+	"""			
+
+			print (call_settings)
+			
+			call_settings = input("Select option: ")
+			
+			match call_settings:
+				case "1":
+					print("Automatic redial")
+				case "2":
+					print("Speed dailling")
+				case "3":
+					print("Call waiting options")
+				case "4":
+					print("Own number sending")
+				case "5":
+					print("Phone line in use")  	
+				case "6":
+					print("Automatic answer")
+				case _:
+					print ("Invalid selection")
+			
+			
+			
+		case "2":
+			print("Phone settings")
+			phone_setting = """
+			
+	1. Language
+	2. Cell info display
+	3. Welcome note
+	4. Network selection
+	5. Confirm SIM service action	  				
+	"""
+			print(phone_setting)
+			
+			phone_settings_choice = input("Select option: ")
+			
+			match phone_settings_choice:
+				case "1":
+					print("Language")
+				case "2":
+					print("Cell info display")
+				case "3":
+					print("Welcome note")
+				case "4":
+					print(" Network selection")
+				case "5":
+					print("Confirm SIM service action")
+				case _:
+					print ("Invalid selection") 			
+		    
+
+			
+		case "3":
+			print("Security settings")
+			security_settings = """
+			
+	1. PIN code request
+	2. Call barring service
+	3. Fixed dailling
+	4. Closed up group
+	5. Security level
+	6. Change acces codes
+	"""		
+
+			print (security_settings)
+			security_settings = input("Select option")
+							
+			match security_settings:
+				case "1":
+					print("PIN code request")
+				case "2":
+					print("Call barring service")
+				case "3":
+					print("Fixed dailling")
+				case "4":
+					print("Closed up group")
+				case "5":
+					print("Security level")  	
+				case "6":
+					print("Change acces codes")
+				case _:
+					print ("Invalid selection")
+			
+			
+					
+		case "4":
+			print("Restor factory settings")
+		case _:
+			print ("Invalid selection")
+			
+	display_main_menu()
+
+
+def call_divert():
+	print ("Call divert")
+	
+	display_main_menu()
 
 		
+def music():
+	print ("Music")
+	music = """
+			
+	1. Music player
+	2. Radio
+	3. Recorder
+	4. Track list		
+	"""		
+
+	print (music)
+	music = input("Select option: ")
 		
+	match music:
+		case "1":
+			print("Music player")
+		case "2":
+			print("Radio")
+		case "3":
+			print("Recorder")
+		case "4":
+			print("Track list")
+		case _:
+			print ("Invalid selection")	
+			
+	display_main_menu()
+	
+	
+def games():
+	print ("Games")
+	
+	display_main_menu()
+				
+
+def calculator():
+	print("calculator")
+	
+	display_main_menu()
+	
+	
+def reminders():
+	print("Reminders")
+	
+	display_main_menu()
+	
+	
+def clock():
+	print("clock")
+	clock = """
+			
+	1. Alarm clock
+	2. Clock settings			
+	3. Date setting
+	4. Stopwatch
+	5. Countdown timer
+	6. Auto update of date and time				 		
+	"""		
+			
+	print(clock)
+	clock = input("Select option")
+	
+	match clock:
+		case "1":
+			print("Alarm clock")
+		case "2":
+			print("Clock settings")
+		case "3":
+			print("Date setting")
+		case "4":
+			print("Stopwatch")	
+		case "5":
+			print(" Countdown timer")
+		case "6":
+			print(" Auto update of date and time")
+		case _:
+			print ("Invalid selection")	
+			
+	display_main_menu()	
 
 
+def profiles():
+	print("Profiles")
+	
+	display_main_menu()
+
+
+def service():
+	print("Service")
+	
+	display_main_menu()
+	
+	
+def SIM_service():
+	print("SIM_service")
+	
+	display_main_menu()
+	
+	
+def main_menu():
+	print("main_menu")
+	
+	display_main_menu()
+	
+	
 
 display_main_menu()
 
