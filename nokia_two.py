@@ -226,7 +226,7 @@ match main_menu:
 				print("Recieved calls")
 			case "3":
 				print("Dailled number")
-			case "4"
+			case "4":
 				print("Erase recent calls")
 			case "5":
 				print("Show call duration")
