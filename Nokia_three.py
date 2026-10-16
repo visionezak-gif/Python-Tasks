@@ -1,62 +1,68 @@
 def display_main_menu():
-	main_menu = """
+	while True:
+		main_menu = """
 
-	================Menu functions=================
-	Press
+		================Menu functions=================
+		Press
 
-	1. Phone book
-	2. Messages
-	3. Chat
-	4. Call register
-	5. Tones
-	6. Settings
-	7. Call divert
-	8. Music
-	9. Games
-	10. Calculator
-	11. Reminders
-	12. Clock
-	13. Profiles
-	14. Service
-	15. SIM service
-	0. main_menu
-	"""
-	print(main_menu)
-	main_menu = input("Select option: ")
-	
-	match(main_menu):
-		case "1":
-			phone_book_menu()
-		case "2":
-			message_menu()
-		case "3":
-			chat()
-		case "4":
-			call_register()
-		case "5":
-			tones()
-		case "6":
-			settings()
-		case "7":
-			call_divert()
-		case "8":
-			music()
-		case "9":
-			games()
-		case "10":
-			calculator()
-		case "11":
-			reminders()
-		case "12":
-			clock()
-		case "13":
-			profiles()
-		case "14":
-			service()
-		case "15":
-			SIM_service()
-		case "0":
-			main_menu()
+		1. Phone book
+		2. Messages
+		3. Chat
+		4. Call register
+		5. Tones
+		6. Settings
+		7. Call divert
+		8. Music
+		9. Games
+		10. Calculator
+		11. Reminders
+		12. Clock
+		13. Profiles
+		14. Service
+		15. SIM service
+		99. Exit
+		0. main_menu
+		"""
+		print(main_menu)
+		main_menu = input("Select option: ")
+		
+		match(main_menu):
+			case "1":
+				phone_book_menu()
+			case "2":
+				message_menu()
+			case "3":
+				chat()
+			case "4":
+				call_register()
+			case "5":
+				tones()
+			case "6":
+				settings()
+			case "7":
+				call_divert()
+			case "8":
+				music()
+			case "9":
+				games()
+			case "10":
+				calculator()
+			case "11":
+				reminders()
+			case "12":
+				clock()
+			case "13":
+				profiles()
+			case "14":
+				service()
+			case "15":
+				SIM_service()
+			case "99":
+				break
+			case "0":
+				main_menu()
+			case _:
+			 	print("Invalid selection")
 			
 
 
@@ -127,7 +133,7 @@ def phone_book_menu():
 		case _:
 			print ("Invalid selection")
 			
-	display_main_menu()
+#	display_main_menu()
 
 
 def message_menu():
@@ -229,7 +235,7 @@ def message_menu():
 		case _:
 			print ("Invalid selection")
 						
-	display_main_menu()
+#	display_main_menu()
 
 	
 	
@@ -237,7 +243,7 @@ def message_menu():
 def chat():
 	print("Chat")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 def call_register():
 	print("callregister")
@@ -344,7 +350,7 @@ def call_register():
 		case _:
 			print ("Invalid selection")
 			
-	display_main_menu()
+#	display_main_menu()
 			
 			
 def tones():
@@ -384,7 +390,7 @@ def tones():
 		case _:
 			print ("Invalid selection")	
 			
-	display_main_menu()
+#	display_main_menu()
 			  	
 
 def settings():
@@ -505,13 +511,13 @@ def settings():
 		case _:
 			print ("Invalid selection")
 			
-	display_main_menu()
+#	display_main_menu()
 
 
 def call_divert():
 	print ("Call divert")
 	
-	display_main_menu()
+#	display_main_menu()
 
 		
 def music():
@@ -539,25 +545,25 @@ def music():
 		case _:
 			print ("Invalid selection")	
 			
-	display_main_menu()
+#	display_main_menu()
 	
 	
 def games():
 	print ("Games")
 	
-	display_main_menu()
+#	display_main_menu()
 				
 
 def calculator():
 	print("calculator")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 	
 def reminders():
 	print("Reminders")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 	
 def clock():
@@ -591,31 +597,31 @@ def clock():
 		case _:
 			print ("Invalid selection")	
 			
-	display_main_menu()	
+#	display_main_menu()	
 
 
 def profiles():
 	print("Profiles")
 	
-	display_main_menu()
+#	display_main_menu()
 
 
 def service():
 	print("Service")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 	
 def SIM_service():
 	print("SIM_service")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 	
 def main_menu():
 	print("main_menu")
 	
-	display_main_menu()
+#	display_main_menu()
 	
 	
 
