@@ -58,16 +58,16 @@
 
 #products = [("Laptop", 1200), ("Mouse", 25), ("Keyboard", 45), ("Monitor", 300), ("USB Cable", 10)]
 #
-#count = 0
+#sum = 0
 #
 #for item, price in products:
 #
 #	
-#		count+=price
+#		sum+=price
 #	
-#print(count)
-#
-#
+#print(sum)
+
+
 
 
 
@@ -100,31 +100,56 @@
 
 
 
-points = [ (2, 3),(-1, 4),(5, -6),(0, 7),(-3, -2)]
+#points = [ (2, 3),(-1, 4),(5, -6),(0, 7),(-3, -2)]
+#
+#for index, count in points:
+#	
+#	print(index)
+#	print(count)
+#
+#result_one = index.append(count)
+#new_list = []
+#result = new_list.append(result_one)
+#
+#print(result)
+#
 
-for index, count in points:
+
+
+
+
+#employees = [("John", "IT", 50000),("Jane", "HR", 45000),("Mike", "IT", 60000),("Sara", "Finance", 70000)]
+#
+#for name, department, salary in employees:
+#
+#	print(name," department is " + department, " and salary is ",  salary)
+#
+
+
+
+
+
+#employees = [("John", "IT", 50000),("Jane", "HR", 45000),("Mike", "IT", 60000),("Sara", "Finance", 70000)]
+#empty_list = []
+#for name, department, salary in employees:
+#
+#	if department == "IT":
+#		
+#		empty_list.append(department)
+#		print(name, " Department is " + department)
+#
+
+
+
+
+
+employees = [("John", "IT", 50000),("Jane", "HR", 45000),("Mike", "IT", 60000),("Sara", "Finance", 70000)]
+
+for name, department, salary in employees:
+
+	if salary >= 55000:
 	
-	print(index)
-	print(count)
-
-result_one = index.append(count)
-new_list = []
-result = new_list.append(result_one)
-
-print(result)
-
-
-
-
-
-
-
-
-
-
-
-
-
+		print ("Employee name is " + name)
 
 
 
